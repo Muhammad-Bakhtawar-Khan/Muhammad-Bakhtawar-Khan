@@ -11,10 +11,10 @@
 - `SEO-KEYWORD-MAP.md` for page-by-page search intent
 
 ## Before launch
-1. Confirm the deployed domain is exactly `https://mr-bakhtawar-mbk111.vercel.app`. If not, replace it in canonical URLs, structured data, sitemap and robots.txt.
+1. Confirm the deployed domain is exactly `https://muhammad-bakhtawar-khan.vercel.app`. If not, replace it in canonical URLs, structured data, sitemap and robots.txt.
 2. Deploy the files and check each URL returns HTTP 200.
 3. Add the domain property to Google Search Console and verify ownership.
-4. Submit `https://mr-bakhtawar-mbk111.vercel.app/sitemap.xml` in Search Console.
+4. Submit `https://muhammad-bakhtawar-khan.vercel.app/sitemap.xml` in Search Console.
 5. Use URL Inspection on the home page, profile page, projects page and article URLs; request indexing for priority URLs.
 6. Check structured data with Google's Rich Results Test / Schema Markup Validator.
 7. Use Search Console's Performance report to track impressions, clicks, queries and indexing issues.

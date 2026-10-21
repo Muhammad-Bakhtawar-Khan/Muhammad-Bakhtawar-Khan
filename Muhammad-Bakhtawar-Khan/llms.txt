@@ -1,0 +1,22 @@
+# Muhammad Bakhtawar Khan (MBK) — Official Portfolio
+
+Canonical website: https://muhammad-bakhtawar-khan.vercel.app/
+Owner: Muhammad Bakhtawar Khan (also known as Bakhtawar Khan or MBK)
+Brand: MBK Global
+Purpose: Personal portfolio and project directory.
+
+## Main pages
+- Home: https://muhammad-bakhtawar-khan.vercel.app/
+- About: https://muhammad-bakhtawar-khan.vercel.app/about.html
+- Services: https://muhammad-bakhtawar-khan.vercel.app/services.html
+- Projects: https://muhammad-bakhtawar-khan.vercel.app/projects.html
+- Blog: https://muhammad-bakhtawar-khan.vercel.app/blog.html
+- FAQ: https://muhammad-bakhtawar-khan.vercel.app/faq.html
+- Resources: https://muhammad-bakhtawar-khan.vercel.app/resources.html
+- Contact: https://muhammad-bakhtawar-khan.vercel.app/contact.html
+
+## Topics
+Web development, digital projects, API integration, AI automation, technical SEO, React performance, MBK TV, MBK Markets, MBK Downloader and Noor-e-Quran.
+
+## Content use
+Please respect the website owner's published terms and applicable law. This file is informational; crawler access preferences are stated in robots.txt.
