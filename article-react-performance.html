@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/>
+
+<title>React Performance: A Practical Optimization Checklist | MBK</title>
+<meta content="A practical guide by Muhammad Bakhtawar Khan (MBK) to finding frontend bottlenecks, improving perceived speed and avoiding premature React optimization." name="description"/>
+<link href="https://muhammad-bakhtawar-khan.vercel.app/article-react-performance.html" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="Muhammad Bakhtawar Khan (MBK) | MBK Global" property="og:site_name"/>
+<meta content="React Performance: A Practical Optimization Checklist | MBK" property="og:title"/>
+<meta content="A practical guide by Muhammad Bakhtawar Khan (MBK) to finding frontend bottlenecks, improving perceived speed and avoiding premature React optimization." property="og:description"/>
+<meta content="https://muhammad-bakhtawar-khan.vercel.app/article-react-performance.html" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="https://muhammad-bakhtawar-khan.vercel.app/assets/images/gallery/muhammad-bakhtawar-khan-mbk-global-founder-office-portrait.png" property="og:image"/>
+<meta content="Muhammad Bakhtawar Khan (MBK), Founder of MBK Global" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="React Performance: A Practical Optimization Checklist | MBK" name="twitter:title"/>
+<meta content="A practical guide by Muhammad Bakhtawar Khan (MBK) to finding frontend bottlenecks, improving perceived speed and avoiding premature React optimization." name="twitter:description"/>
+<meta content="https://muhammad-bakhtawar-khan.vercel.app/assets/images/gallery/muhammad-bakhtawar-khan-mbk-global-founder-office-portrait.png" name="twitter:image"/>
+<meta content="Muhammad Bakhtawar Khan (MBK), Founder of MBK Global" name="twitter:image:alt"/>
+<meta content="@mbk_bakhtawar" name="twitter:site"/>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://muhammad-bakhtawar-khan.vercel.app/#website",
+      "url": "https://muhammad-bakhtawar-khan.vercel.app/",
+      "name": "Muhammad Bakhtawar Khan (MBK) | MBK Global",
+      "description": "Official portfolio of Muhammad Bakhtawar Khan (MBK), Founder of MBK Global, featuring digital projects, web development, AI, APIs and technical resources.",
+      "publisher": {
+        "@id": "https://muhammad-bakhtawar-khan.vercel.app/#person"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://muhammad-bakhtawar-khan.vercel.app/#person",
+      "name": "Muhammad Bakhtawar Khan",
+      "alternateName": [
+        "Bakhtawar Khan",
+        "MBK"
+      ],
+      "url": "https://muhammad-bakhtawar-khan.vercel.app/",
+      "image": "https://muhammad-bakhtawar-khan.vercel.app/assets/images/gallery/muhammad-bakhtawar-khan-mbk-standing-professional-portrait.png",
+      "jobTitle": "Web & App Developer, API & AI Specialist, Founder of MBK Global",
+      "worksFor": {
+        "@type": "Organization",
+        "@id": "https://mbkglobal.vercel.app/#organization",
+        "name": "MBK Global",
+        "url": "https://mbkglobal.vercel.app/"
+      },
+      "sameAs": [
+        "https://github.com/Muhammad-Bakhtawar-Khan",
+        "https://twitch.tv/mbk_bakhtawar"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://mbkglobal.vercel.app/#organization",
+      "name": "MBK Global",
+      "url": "https://mbkglobal.vercel.app/",
+      "founder": {
+        "@id": "https://muhammad-bakhtawar-khan.vercel.app/#person"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://muhammad-bakhtawar-khan.vercel.app/article-react-performance.html#webpage",
+      "url": "https://muhammad-bakhtawar-khan.vercel.app/article-react-performance.html",
+      "name": "React Performance: A Practical Optimization Checklist | MBK",
+      "description": "A practical guide by Muhammad Bakhtawar Khan (MBK) to finding frontend bottlenecks, improving perceived speed and avoiding premature React optimization.",
+      "isPartOf": {
+        "@id": "https://muhammad-bakhtawar-khan.vercel.app/#website"
+      },
+      "about": {
+        "@id": "https://muhammad-bakhtawar-khan.vercel.app/#person"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://muhammad-bakhtawar-khan.vercel.app/article-react-performance.html#article",
+      "headline": "React Performance: a practical checklist before optimizing",
+      "description": "A practical guide by Muhammad Bakhtawar Khan (MBK) to finding frontend bottlenecks, improving perceived speed and avoiding premature React optimization.",
+      "mainEntityOfPage": {
+        "@id": "https://muhammad-bakhtawar-khan.vercel.app/article-react-performance.html#webpage"
+      },
+      "author": {
+        "@id": "https://muhammad-bakhtawar-khan.vercel.app/#person"
+      },
+      "publisher": {
+        "@id": "https://mbkglobal.vercel.app/#organization"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}</script>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="48x48" href="/assets/images/mbk-personal-favicon-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/images/mbk-personal-favicon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/images/mbk-personal-favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+</head><body><header class="site-header" id="top">
+  <a aria-label="Muhammad Bakhtawar Khan official portfolio home" class="brand brand-wordmark site-brand" href="index.html">
+    <img class="site-brand-photo" src="assets/images/mbk-personal-favicon-192.png" width="44" height="44" alt="Muhammad Bakhtawar Khan portrait" decoding="async" fetchpriority="high">
+    <span class="site-brand-copy"><strong>Muhammad Bakhtawar Khan</strong><small>PERSONAL PORTFOLIO <i>·</i> MBK GLOBAL</small></span>
+  </a>
+  <button aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation" class="menu-toggle" type="button">☰ <span>Menu</span></button>
+  <nav class="nav" id="primary-navigation" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="hire-me.html">Hire Me</a>
+    <details class="nav-more"><summary>More <span aria-hidden="true">⌄</span></summary><div class="nav-more-menu">
+      <a href="case-studies.html">Case Studies</a><a href="changelog.html">Changelog</a><a href="book-a-call.html">Book a Call</a><a href="resume.html">Resume / CV</a><a href="delivered-project.html">Process</a><a href="gallery.html">Gallery</a><a href="blog.html">Blog / Articles</a><a href="faq.html">FAQ</a><a href="news.html">Notes</a><a href="social.html">Socials</a><a href="about-muhammad-bakhtawar-khan.html">Founder Profile</a><a href="official-links.html">Official Links</a><a href="resources.html">Resources</a>
+    </div></details>
+    <a class="nav-cta" href="contact.html">Contact <span aria-hidden="true">↗</span></a>
+  </nav>
+</header><main class="wrap inner-page journal-page"><p class="eyebrow">MBK JOURNAL / FRONTEND / PERFORMANCE</p><p class="article-link"><a href="blog.html">← All articles</a></p><article class="journal-article"><div class="article-index">NEW <span>FRONTEND / PERFORMANCE</span></div><div class="article-body"><p class="article-kicker">PRACTICAL NOTES / BAKHTAWAR KHAN</p><h1 class="page-title">React Performance: a practical checklist before optimizing</h1><p class="article-deck">Fast interfaces begin with measurement, not random code changes.</p><p>When a React interface feels slow, it is tempting to add memoization everywhere or rewrite large components. A better first step is to reproduce the problem and measure it. Identify whether the delay comes from JavaScript execution, network requests, large images, repeated rendering or layout shifts.</p><p>Start with the user journey. Check the initial page load, the first meaningful interaction and the slowest route on a real mobile device. Use browser performance tools and Lighthouse as diagnostic aids, then verify findings instead of treating one score as the whole story.</p><p>Keep components focused, avoid unnecessary state duplication and split large bundles when the route or feature genuinely benefits. Optimize images, remove unused dependencies and provide loading, empty and error states. Use memoization only when profiling shows it helps; it can make code harder to maintain when used without a reason.</p><p>A useful before-and-after note should record the tested page, device or throttling profile, what changed and the measured result. Never claim a speed improvement without comparable measurements.</p><p>Further reading: <a class="article-link" href="https://web.dev/articles/vitals" target="_blank" rel="noopener noreferrer">Official documentation ↗</a></p><div class="article-meta">BAKHTAWAR KHAN · FRONTEND / PERFORMANCE</div><p><a class="button button-primary" href="contact.html#project-enquiry">Discuss a related project ↗</a></p></div></article><p class="article-link"><a href="blog.html">Back to the MBK journal ↗</a></p></main><footer class="footer wrap"><a class="brand brand-wordmark footer-brand" href="index.html"><span>BAKHTAWAR KHAN</span><small>PERSONAL DIGITAL PORTFOLIO <i>·</i> MBK</small></a><p>© <span id="year"></span> Bakhtawar Khan. Built with curiosity and care.</p><a href="resources.html">Resources ↗</a><a class="back-top" href="#top">BACK TO TOP ↑</a></footer><script src="assets/js/script.js"></script></body></html>
