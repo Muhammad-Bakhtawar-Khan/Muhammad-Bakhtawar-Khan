@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/><style>
+.services-hero{padding:clamp(3rem,8vw,7rem) 0 3rem;border-bottom:1px solid var(--line,#ddd)}.services-hero h1{max-width:950px;font-size:clamp(2.8rem,7vw,6.8rem);line-height:.98;letter-spacing:-.06em;margin:.6rem 0 1.4rem}.services-hero h1 em{font-family:Georgia,serif;font-weight:400}.services-hero .lead{max-width:780px;font-size:1.12rem;line-height:1.8}.service-intro{display:grid;grid-template-columns:1fr 2fr;gap:2rem;padding:3rem 0;border-bottom:1px solid var(--line,#ddd)}.service-intro h2{margin:0;font-size:1.8rem}.service-intro p,.service-item p,.article-copy p{line-height:1.8;max-width:850px}.service-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 2.5rem}.service-item{padding:2rem 0;border-bottom:1px solid var(--line,#ddd)}.service-number,.eyebrow{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;opacity:.7}.service-item h2{font-size:1.45rem;margin:.7rem 0}.article-copy{max-width:900px;padding:4rem 0}.article-copy h2{font-size:clamp(1.6rem,3vw,2.4rem);letter-spacing:-.03em;margin:2.5rem 0 .7rem}.article-copy h3{margin-top:1.8rem}.service-cta{padding:clamp(2rem,5vw,4rem);border:1px solid var(--line,#ddd);margin:2rem 0 4rem;border-radius:8px}.service-cta h2{font-size:clamp(2rem,4vw,3.5rem);margin:.4rem 0 1rem}.service-cta a{display:inline-block;margin:.6rem 1rem .4rem 0}@media(max-width:700px){.service-intro{grid-template-columns:1fr;gap:.7rem}.service-grid{grid-template-columns:1fr}}
+
+/* Refined services experience: clear hierarchy, scannable cards, strong mobile layout. */
+.services-hero{position:relative;overflow:hidden;padding-top:clamp(3.5rem,9vw,8rem)}
+.services-hero:after{content:"MBK";position:absolute;right:-.02em;top:.05em;font-size:clamp(8rem,24vw,22rem);font-weight:800;letter-spacing:-.1em;line-height:1;color:var(--line,#ddd);opacity:.16;pointer-events:none;z-index:0}
+.services-hero>*{position:relative;z-index:1}
+.services-hero .lead{font-size:clamp(1rem,1.6vw,1.2rem);max-width:760px}
+.services-quicklinks{display:flex;flex-wrap:wrap;gap:.65rem;margin:1.8rem 0 0}
+.services-quicklinks a{border:1px solid var(--line,#ddd);border-radius:999px;padding:.65rem .9rem;font-size:.8rem;text-decoration:none;transition:background .2s,color .2s,border-color .2s}
+.services-quicklinks a:hover{background:var(--accent);color:#111;border-color:var(--accent)}
+.service-intro{align-items:start}
+.service-intro h2{letter-spacing:-.04em}
+.service-grid{gap:0 1.4rem;align-items:stretch}
+.service-item{position:relative;padding:1.7rem 1.25rem 1.9rem 0;transition:transform .2s ease}
+.service-item:before{content:"";position:absolute;left:0;bottom:-1px;width:0;height:2px;background:var(--accent);transition:width .25s ease}
+.service-item:hover:before{width:100%}
+.service-item h2{letter-spacing:-.035em;line-height:1.2}
+.service-item p{font-size:.94rem;color:var(--muted);margin-bottom:0}
+.service-number{display:inline-flex;align-items:center;gap:.5rem;color:var(--accent);font-weight:700}
+.article-copy{padding-top:2.5rem}
+.article-copy h2{scroll-margin-top:100px}
+.article-copy p{font-size:1rem}
+.service-cta{background:rgba(127,140,90,.06);border-radius:12px}
+.service-cta a{padding:.75rem 1rem;border:1px solid var(--line,#ddd);border-radius:4px;text-decoration:none}
+.service-cta a:hover{border-color:var(--accent)}
+@media(max-width:700px){.services-hero:after{top:.35em;right:-.08em}.service-grid{grid-template-columns:1fr}.service-item{padding-right:0}.services-quicklinks a{font-size:.75rem}.service-cta{padding:1.4rem}}
+.delivery-teaser{display:flex;justify-content:space-between;align-items:end;gap:2rem;margin:2rem 0 1rem;padding:clamp(1.5rem,4vw,3rem);background:var(--surface,rgba(127,140,90,.08));border:1px solid var(--line,#ddd);border-radius:16px}.delivery-teaser h2{font-size:clamp(2rem,4vw,3.6rem);letter-spacing:-.05em;max-width:700px;line-height:1.05;margin:.5rem 0 1rem}.delivery-teaser p:not(.eyebrow){max-width:650px;line-height:1.8;color:var(--muted)}.delivery-link{white-space:nowrap;text-decoration:none;border-bottom:1px solid var(--accent);padding:.8rem 0}.delivery-link span{margin-left:1rem;color:var(--accent)}.service-item{border:1px solid transparent;border-bottom-color:var(--line,#ddd);padding:1.7rem;border-radius:12px}.service-item:hover{border-color:var(--line,#ddd);background:rgba(127,140,90,.035)}@media(max-width:700px){.delivery-teaser{display:block}.delivery-link{display:inline-block;margin-top:1rem;white-space:normal}}
+</style>
+<title>Web Development, AI, APIs &amp; SEO Services | Muhammad Bakhtawar Khan</title>
+<meta content="Explore digital services from Muhammad Bakhtawar Khan (MBK): websites, web apps, API integration, WhatsApp bots, AI automation, technical SEO, security review and code analysis." name="description"/>
+<meta content="Muhammad Bakhtawar Khan" name="author"/>
+<link href="https://muhammad-bakhtawar-khan.vercel.app/services.html" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="Muhammad Bakhtawar Khan (MBK) | MBK Global" property="og:site_name"/>
+<meta content="Web Development, AI, APIs &amp; SEO Services | Muhammad Bakhtawar Khan" property="og:title"/>
+<meta content="Explore digital services from Muhammad Bakhtawar Khan (MBK): websites, web apps, API integration, WhatsApp bots, AI automation, technical SEO, security review and code analysis." property="og:description"/>
+<meta content="https://muhammad-bakhtawar-khan.vercel.app/services.html" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Web Development, AI, APIs &amp; SEO Services | Muhammad Bakhtawar Khan" name="twitter:title"/>
+<meta content="Explore digital services from Muhammad Bakhtawar Khan (MBK): websites, web apps, API integration, WhatsApp bots, AI automation, technical SEO, security review and code analysis." name="twitter:description"/>
+<meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/>
+<meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="googlebot"/>
+<meta content="strict-origin-when-cross-origin" name="referrer"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="@mbk_bakhtawar" name="twitter:site"/>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://muhammad-bakhtawar-khan.vercel.app/#website",
+      "url": "https://muhammad-bakhtawar-khan.vercel.app/",
+      "name": "Muhammad Bakhtawar Khan (MBK) | MBK Global",
+      "description": "Official portfolio of Muhammad Bakhtawar Khan (MBK), Founder of MBK Global, featuring digital projects, web development, AI, APIs and technical resources.",
+      "publisher": {
+        "@id": "https://muhammad-bakhtawar-khan.vercel.app/#person"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://muhammad-bakhtawar-khan.vercel.app/#person",
+      "name": "Muhammad Bakhtawar Khan",
+      "alternateName": [
+        "Bakhtawar Khan",
+        "MBK"
+      ],
+      "url": "https://muhammad-bakhtawar-khan.vercel.app/",
+      "image": "https://muhammad-bakhtawar-khan.vercel.app/assets/images/gallery/muhammad-bakhtawar-khan-mbk-standing-professional-portrait.png",
+      "jobTitle": "Web & App Developer, API & AI Specialist, Founder of MBK Global",
+      "worksFor": {
+        "@type": "Organization",
+        "@id": "https://mbkglobal.vercel.app/#organization",
+        "name": "MBK Global",
+        "url": "https://mbkglobal.vercel.app/"
+      },
+      "sameAs": [
+        "https://github.com/Muhammad-Bakhtawar-Khan",
+        "https://twitch.tv/mbk_bakhtawar"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://mbkglobal.vercel.app/#organization",
+      "name": "MBK Global",
+      "url": "https://mbkglobal.vercel.app/",
+      "founder": {
+        "@id": "https://muhammad-bakhtawar-khan.vercel.app/#person"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://muhammad-bakhtawar-khan.vercel.app/services.html#webpage",
+      "url": "https://muhammad-bakhtawar-khan.vercel.app/services.html",
+      "name": "Web Development, AI, APIs & SEO Services | Muhammad Bakhtawar Khan",
+      "description": "Explore digital services from Muhammad Bakhtawar Khan (MBK): websites, web apps, API integration, WhatsApp bots, AI automation, technical SEO, security review and code analysis.",
+      "isPartOf": {
+        "@id": "https://muhammad-bakhtawar-khan.vercel.app/#website"
+      },
+      "about": {
+        "@id": "https://muhammad-bakhtawar-khan.vercel.app/#person"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://muhammad-bakhtawar-khan.vercel.app/services.html#services",
+      "name": "Digital services by Muhammad Bakhtawar Khan (MBK)",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Graphic Design & Branding"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Website Design"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Website Development"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Web Applications & Dashboards"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Application Development"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "API Development & Integration"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "WhatsApp Bots & Messaging Automation"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "AI Chatbots & AI Integration"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Business Process Automation"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "E-commerce & Product Catalogues"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "name": "SEO & Technical SEO"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "name": "Content, Blogs & Articles"
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "name": "Social Media & Advertising Creatives"
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "name": "Video Editing & Motion Content"
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "name": "Security Review & Code Analysis"
+        },
+        {
+          "@type": "ListItem",
+          "position": 16,
+          "name": "Deployment, Hosting & Maintenance"
+        },
+        {
+          "@type": "ListItem",
+          "position": 17,
+          "name": "Technical Consulting & Product Planning"
+        }
+      ]
+    }
+  ]
+}</script>
+<meta content="https://muhammad-bakhtawar-khan.vercel.app/assets/images/gallery/muhammad-bakhtawar-khan-mbk-global-founder-office-portrait.png" property="og:image"/>
+<meta content="Muhammad Bakhtawar Khan (MBK), Founder of MBK Global" property="og:image:alt"/>
+<meta content="https://muhammad-bakhtawar-khan.vercel.app/assets/images/gallery/muhammad-bakhtawar-khan-mbk-global-founder-office-portrait.png" name="twitter:image"/>
+<meta content="Muhammad Bakhtawar Khan (MBK), Founder of MBK Global" name="twitter:image:alt"/>
+<link href="/favicon.ico" rel="icon" sizes="any"/>
+<link href="/assets/images/mbk-personal-favicon-48.png" rel="icon" sizes="48x48" type="image/png"/>
+<link href="/assets/images/mbk-personal-favicon-96.png" rel="icon" sizes="96x96" type="image/png"/>
+<link href="/assets/images/mbk-personal-favicon-192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="/assets/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<meta content="Muhammad Bakhtawar Khan, Bakhtawar Khan, MBK, MBK Global, Bakhtawar developer, MBK developer, personal portfolio Karachi Pakistan, web development portfolio, AI and API integration, technical SEO, answer engine optimization (AEO), generative engine optimization (GEO), website security, digital branding, automation workflows, web performance optimization, structured data SEO, personal brand SEO" name="keywords"/><style id="mbk-internal-link-upgrade-css">.mbk-site-directory{margin-top:3rem}.mbk-directory-group{margin:1.5rem 0;padding:1.25rem;border:1px solid var(--line,rgba(127,127,127,.25));border-radius:16px}.mbk-directory-group h3{margin:0 0 .8rem}.mbk-directory-group ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:.55rem 1rem;padding:0;margin:0}.mbk-directory-group li a{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;color:inherit;text-decoration:none;border-bottom:1px solid rgba(127,127,127,.14)}.mbk-directory-group li a:hover{text-decoration:underline;text-underline-offset:4px}.mbk-related-links{margin:2rem auto;padding:1.2rem;border:1px solid var(--line,rgba(127,127,127,.25));border-radius:14px}.mbk-related-links ul{display:flex;flex-wrap:wrap;gap:.65rem 1rem;list-style:none;padding:0}.mbk-related-links a{color:inherit;text-underline-offset:3px}</style></head>
+<body><header class="site-header" id="top">
+<a aria-label="Muhammad Bakhtawar Khan official portfolio home" class="brand brand-wordmark site-brand" href="index.html">
+<img alt="Muhammad Bakhtawar Khan portrait" class="site-brand-photo" decoding="async" fetchpriority="high" height="44" src="assets/images/mbk-personal-favicon-192.png" width="44"/>
+<span class="site-brand-copy"><strong>Muhammad Bakhtawar Khan</strong><small>PERSONAL PORTFOLIO <i>·</i> MBK GLOBAL</small></span>
+</a>
+<button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" type="button">☰ <span>Menu</span></button>
+<nav aria-label="Main navigation" class="nav" id="primary-navigation">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="projects.html">Projects</a>
+<a href="services.html">Services</a>
+<a href="hire-me.html">Hire Me</a>
+<details class="nav-more"><summary>More <span aria-hidden="true">⌄</span></summary><div class="nav-more-menu">
+<a href="case-studies.html">Case Studies</a><a href="changelog.html">Changelog</a><a href="book-a-call.html">Book a Call</a><a href="resume.html">Resume / CV</a><a href="delivered-project.html">Process</a><a href="gallery.html">Gallery</a><a href="blog.html">Blog / Articles</a><a href="faq.html">FAQ</a><a href="news.html">Notes</a><a href="social.html">Socials</a><a href="about-muhammad-bakhtawar-khan.html">Founder Profile</a><a href="official-links.html">Official Links</a><a href="resources.html">Resources</a>
+</div></details>
+<a class="nav-cta" href="contact.html">Contact <span aria-hidden="true">↗</span></a>
+</nav>
+</header>
+<main class="wrap inner-page"><section class="services-hero"><p class="eyebrow">MBK / DIGITAL SERVICES</p><h1>Ideas into useful<br/><em>digital experiences.</em></h1><p class="lead">I’m Bakhtawar Khan, founder of MBK Global. I work across creative design, websites, digital products, APIs, automation and practical AI experiments. This page explains the services I can help plan, design, build or integrate—with the exact scope agreed before work begins.</p><div class="services-quicklinks"><a href="#design">Creative design</a><a href="#development">Web development</a><a href="#automation">AI &amp; automation</a><a href="#technical">Technical services</a><a href="delivered-project.html">How projects are delivered ↗</a></div></section>
+<section class="service-intro"><h2>One partner for your digital work.</h2><div><p>Whether you are starting a new business, improving an existing website, promoting a product or connecting different tools, the aim is the same: make the experience clear, useful and maintainable. Services can be booked individually or combined into a project plan.</p><p><strong>Every project starts with the brief.</strong> Deliverables, timeline, platform, pricing, third-party subscriptions and any ongoing support are confirmed before development.</p></div></section>
+<section aria-label="Complete list of digital services" class="service-grid"><article class="service-item" id="design"><span class="service-number">01 / SERVICE</span><h2>Graphic Design &amp; Branding</h2><p>Social media posts, promotional creatives, banners, posters, thumbnails, brand identity concepts, logo direction, typography, and consistent visual systems for businesses and creators.</p></article><article class="service-item"><span class="service-number">02 / SERVICE</span><h2>Website Design</h2><p>Clean, responsive website layouts, landing pages, portfolio websites, business websites, campaign pages, wireframes, UI concepts, and mobile-first visual design.</p></article><article class="service-item" id="development"><span class="service-number">03 / SERVICE</span><h2>Website Development</h2><p>Front-end implementation with HTML, CSS, JavaScript, React and related tools; reusable components, responsive layouts, forms, navigation, performance improvements, and accessible page structure.</p></article><article class="service-item"><span class="service-number">04 / SERVICE</span><h2>Web Applications &amp; Dashboards</h2><p>Interactive web tools, admin-style dashboards, data displays, calculators, directories, catalogues, and browser-based utilities shaped around a clear user workflow.</p></article><article class="service-item"><span class="service-number">05 / SERVICE</span><h2>Application Development</h2><p>Planning and prototyping for application experiences, including cross-platform/mobile app concepts and implementation support based on project scope, platform, and technical requirements.</p></article><article class="service-item"><span class="service-number">06 / SERVICE</span><h2>API Development &amp; Integration</h2><p>API-connected features, third-party service integration, request/response handling, data transformation, documentation support, and troubleshooting of API workflows.</p></article><article class="service-item" id="automation"><span class="service-number">07 / SERVICE</span><h2>WhatsApp Bots &amp; Messaging Automation</h2><p>WhatsApp bot flows, FAQ and lead-capture journeys, customer-support routing, automated replies, notifications, and integrations where the chosen provider and platform policies permit them.</p></article><article class="service-item"><span class="service-number">08 / SERVICE</span><h2>AI Chatbots &amp; AI Integration</h2><p>Practical AI features such as chat assistants, content helpers, knowledge-based Q&amp;A prototypes, AI API integrations, prompt workflows, and AI-enabled tools with appropriate review and safeguards.</p></article><article class="service-item"><span class="service-number">09 / SERVICE</span><h2>Business Process Automation</h2><p>Workflow planning and automation with tools such as n8n, webhooks, APIs, forms, spreadsheets, and notifications to reduce repetitive manual tasks.</p></article><article class="service-item"><span class="service-number">10 / SERVICE</span><h2>E-commerce &amp; Product Catalogues</h2><p>Online store interfaces, product listing pages, product detail layouts, catalogues, cart/checkout integration support, and product content organization.</p></article><article class="service-item" id="growth"><span class="service-number">11 / SERVICE</span><h2>SEO &amp; Technical SEO</h2><p>Page titles and descriptions, heading structure, internal links, image alt text, canonical tags, sitemap and robots.txt setup, structured data where appropriate, and Search Console troubleshooting.</p></article><article class="service-item"><span class="service-number">12 / SERVICE</span><h2>Content, Blogs &amp; Articles</h2><p>Website copy, service pages, blog/article structure, project case studies, FAQs, metadata, and useful content plans aligned with real customer questions.</p></article><article class="service-item"><span class="service-number">13 / SERVICE</span><h2>Social Media &amp; Advertising Creatives</h2><p>Campaign graphics, ad creatives, post designs, promotional banners, content calendars, and creative variations for platforms selected by the client. Ad account access and campaign spend remain client-controlled.</p></article><article class="service-item"><span class="service-number">14 / SERVICE</span><h2>Video Editing &amp; Motion Content</h2><p>Short-form video edits, reels, basic motion-led promotional content, captions, thumbnails, and visual assets, subject to the brief and available source material.</p></article><article class="service-item" id="technical"><span class="service-number">15 / SERVICE</span><h2>Security Review &amp; Code Analysis</h2><p>Authorized, scope-limited review of code and web application behavior, debugging, dependency/configuration checks, and technical analysis. Testing is performed only with permission; no unauthorized access is offered.</p></article><article class="service-item"><span class="service-number">16 / SERVICE</span><h2>Deployment, Hosting &amp; Maintenance</h2><p>Deployment assistance for supported hosting platforms, domain/DNS guidance, environment configuration, basic monitoring guidance, bug fixes, content updates, and ongoing maintenance by agreement.</p></article><article class="service-item"><span class="service-number">17 / SERVICE</span><h2>Technical Consulting &amp; Product Planning</h2><p>Requirement discovery, feature prioritization, technology options, prototype planning, workflow mapping, and practical guidance for turning an idea into a manageable digital project.</p></article></section>
+<section aria-labelledby="mbk-approach-title" class="mbk-approach" id="mbk-service-approach">
+<div class="approach-heading"><div><p class="eyebrow">THE MBK SERVICE APPROACH / GUIDE</p><h2 id="mbk-approach-title">Good ideas deserve<br/><em>a clear route to reality.</em></h2></div><p class="approach-intro">A practical, transparent way to turn a business need into a thoughtful digital solution—without unnecessary complexity or one-size-fits-all promises.</p></div>
+<div class="approach-principles"><article><span class="approach-index">01</span><div><h3>Understand the real need</h3><p>We start with your audience, goals, essential features, content, budget and deadline. The brief shapes the solution—not the other way around.</p><small>DISCOVER · DEFINE · PRIORITIZE</small></div></article><article><span class="approach-index">02</span><div><h3>Design for people</h3><p>Brand identity, page structure and user journeys should make your offer easy to recognize, understand and use across screen sizes.</p><small>BRAND · UX · RESPONSIVE UI</small></div></article><article><span class="approach-index">03</span><div><h3>Build the right technology</h3><p>Websites, apps, APIs, WhatsApp bots and AI workflows are selected around the job to be done. Integrations depend on provider access, platform rules and technical feasibility.</p><small>DEVELOP · CONNECT · AUTOMATE</small></div></article><article><span class="approach-index">04</span><div><h3>Check, refine and hand over</h3><p>We review the agreed scope, test key journeys, address issues and clarify what is delivered. Hosting, paid APIs and ongoing support are included only when agreed.</p><small>TEST · IMPROVE · DELIVER</small></div></article></div>
+<div class="approach-toolkit"><div><p class="eyebrow">THE DIGITAL TOOLKIT</p><h3>Connected skills.<br/><em>One considered plan.</em></h3></div><div class="approach-tags"><span>Web &amp; App Development</span><span>UI &amp; Branding</span><span>API Integration</span><span>WhatsApp Bots</span><span>AI &amp; Automation</span><span>Technical SEO</span><span>Code Analysis</span><span>Authorized Security Review</span></div></div>
+<div class="approach-note"><span class="approach-note-mark">↗</span><div><h3>Clear scope. Honest communication. Useful outcomes.</h3><p>No guaranteed rankings, mystery add-ons or assumptions about third-party fees. Deliverables, milestones and responsibilities are discussed before work begins.</p></div><a class="button button-primary" href="contact.html">Discuss your project ↗</a></div>
+</section>
+<section class="delivery-teaser"><div><p class="eyebrow">A CLEAR PROCESS · NO GUESSWORK</p><h2>From first conversation to final delivery.</h2><p>Understand the goal, agree on the plan, build in clear stages, review together and hand over the finished project.</p></div><a class="delivery-link" href="delivered-project.html">Explore the 4-step process <span>↗</span></a></section>
+<section class="service-cta"><p class="eyebrow">START A CONVERSATION</p><h2>Have a project in mind?</h2><p>Tell me what you want to build, improve or automate. We can discuss the right service and a clear scope.</p><a href="contact.html">Contact Bakhtawar Khan ↗</a><a href="https://wa.me/923200276941" rel="noreferrer" target="_blank">WhatsApp ↗</a><a href="mailto:Bakhtawark085@gmail.com">Email ↗</a></section><section aria-label="FAQ help" class="section wrap service-cta"><p class="eyebrow">HAVE A QUESTION?</p><h2>Find a clear <em>answer.</em></h2><p>Visit the dedicated FAQ page for details about project scope, timelines, services and collaboration.</p><a class="button button-outline" href="faq.html">Browse all FAQs ↗</a></section><aside aria-label="MBK Global identity links" class="identity-directory-links"><p><strong>MBK Global identity:</strong> <a href="about-muhammad-bakhtawar-khan.html">Founder profile</a> · <a href="official-links.html">Official links &amp; projects</a> · <a href="https://mbkglobal.vercel.app/" rel="noopener noreferrer" target="_blank">MBK Global website ↗</a></p></aside><style>.identity-directory-links{max-width:1100px;margin:24px auto;padding:16px 22px;border:1px solid rgba(150,170,160,.22);border-radius:14px;color:inherit}.identity-directory-links p{margin:0;line-height:1.7}.identity-directory-links a{ text-decoration:underline;text-underline-offset:3px}</style><section aria-labelledby="service-pages-heading" class="section wrap"><div class="section-heading"><div><p class="eyebrow">SERVICE DETAILS</p><h2 id="service-pages-heading">Explore specific service scopes.</h2></div><p class="page-intro">Service availability is confirmed per project. These pages explain possible scope and constraints without promising guaranteed results.</p></div><div class="blog-preview-grid"><a href="web-development.html"><span>BUILD</span><h3>Web Development</h3><p>Responsive websites, forms, project pages and deployment planning.</p><i>Read service details ↗</i></a><a href="ai-api-integration.html"><span>INTEGRATE</span><h3>AI &amp; API Integration</h3><p>API workflows, validation, AI-assisted features and reliability considerations.</p><i>Read service details ↗</i></a><a href="technical-seo.html"><span>DISCOVER</span><h3>Technical SEO</h3><p>Crawlability, metadata, canonicals, sitemaps and structured data.</p><i>Read service details ↗</i></a><a href="cybersecurity.html"><span>PROTECT</span><h3>Web Security Practices</h3><p>Authorized, defensive review and secure-development practices.</p><i>Read service details ↗</i></a><a href="digital-branding.html"><span>PRESENT</span><h3>Digital Branding</h3><p>Consistent portfolio, brand messaging and official link directory.</p><i>Read service details ↗</i></a></div></section><section aria-label="Related MBK portfolio pages" class="mbk-related-links"><h2>Explore related MBK pages</h2><p>Continue exploring Muhammad Bakhtawar Khan (MBK), MBK Global projects and practical digital technology resources.</p><ul><li><a href="index.html">Muhammad Bakhtawar Khan (MBK) | Founder of MBK Global — Web Development, AI &amp; Digital Technology</a></li><li><a href="about-muhammad-bakhtawar-khan.html">Muhammad Bakhtawar Khan (MBK) | Founder of MBK Global</a></li><li><a href="projects.html">Projects by Muhammad Bakhtawar Khan (MBK)</a></li><li><a href="resources.html">Web Development, API, SEO &amp; Accessibility Resources | MBK</a></li><li><a href="blog.html">Articles &amp; Guides by Muhammad Bakhtawar Khan (MBK)</a></li><li><a href="official-links.html">Official Links &amp; Projects</a></li><li><a href="contact.html">Contact Muhammad Bakhtawar Khan (MBK)</a></li><li><a href="web-development.html">Web Development Services</a></li><li><a href="digital-branding.html">Digital Branding &amp; Portfolio Presence</a></li><li><a href="blog-personal-branding.html">Building a Consistent Personal Brand Online | Muhammad Bakhtawar Khan (MBK)</a></li><li><a href="blog-content-quality.html">Writing Useful Website Content | Muhammad Bakhtawar Khan (MBK)</a></li></ul></section></main>
+<footer class="footer wrap"><a class="brand brand-wordmark footer-brand" href="index.html"><span>BAKHTAWAR KHAN</span><small>PERSONAL DIGITAL PORTFOLIO <i>·</i> MBK</small></a><p>© <span id="year"></span> Bakhtawar Khan. Built with curiosity and care.</p><a href="resources.html">Resources ↗</a><a href="resume.html">Resume / CV ↗</a><a href="changelog.html">Changelog ↗</a><a href="book-a-call.html">Book a Call ↗</a><a class="back-top" href="#top">BACK TO TOP ↑</a></footer><script src="assets/js/script.js"></script></body></html>

@@ -1,0 +1,36 @@
+# Muhammad Bakhtawar Khan (MBK) and MBK Global
+
+This file is a concise navigation aid, not a search-ranking or AI-inclusion guarantee.
+
+## Identity
+- Individual: Muhammad Bakhtawar Khan, also known as Bakhtawar Khan or MBK.
+- Public relationship: Founder of MBK Global.
+- Personal portfolio: https://muhammad-bakhtawar-khan.vercel.app/
+- Founder profile: https://muhammad-bakhtawar-khan.vercel.app/about-muhammad-bakhtawar-khan.html
+- Brand website: https://mbkglobal.vercel.app/
+- Brand description: Digital technology and creative solutions brand focused on web development, digital experiences, AI-related solutions, API integration, SEO, digital branding and technology projects.
+- Contact: Bakhtawark085@gmail.com | WhatsApp +92 320 0276941 (https://wa.me/923200276941)
+
+## Main portfolio pages
+- About: https://muhammad-bakhtawar-khan.vercel.app/about.html
+- Services: https://muhammad-bakhtawar-khan.vercel.app/services.html
+- Projects: https://muhammad-bakhtawar-khan.vercel.app/projects.html
+- Official links directory: https://muhammad-bakhtawar-khan.vercel.app/official-links.html
+- Book a call: https://muhammad-bakhtawar-khan.vercel.app/book-a-call.html
+- Contact: https://muhammad-bakhtawar-khan.vercel.app/contact.html
+- FAQ: https://muhammad-bakhtawar-khan.vercel.app/faq.html
+- Blog: https://muhammad-bakhtawar-khan.vercel.app/blog.html
+
+## Associated projects
+- MBK TV: https://mbktv.vercel.app/ (live page inspected)
+- MBK Markets: https://mbkmarkets.vercel.app/ (URL opened; page content should be reviewed)
+- MBK Downloader: https://mbkdownloader.vercel.app/ (redirects; verify destination before promotion)
+- Noor-e-Quran: https://noorquranbymbk.vercel.app/ (live page title inspected)
+
+## Search and crawler policy
+- OAI-SearchBot is allowed for search discovery.
+- GPTBot remains disallowed by owner policy; search crawling and model-training crawling are separate controls.
+- See robots.txt for the current policy. Crawling permission does not guarantee indexing or citation.
+
+## Accuracy note
+Professional interests and project areas should not be treated as proof of formal qualifications, legal company registration, guaranteed results or independent endorsements. Verify current services, titles, profile ownership and project status with the owner.
