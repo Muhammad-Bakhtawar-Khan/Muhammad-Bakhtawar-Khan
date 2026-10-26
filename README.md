@@ -1,4 +1,4 @@
-# Bakhtawar Khan — Personal Digital Portfolio (MBK)
+# Bakhtawar .Khan — Personal Digital Portfolio (MBK)
 
 A responsive static portfolio built with HTML, CSS and vanilla JavaScript.
 
